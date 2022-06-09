@@ -222,3 +222,21 @@ body {
   color: #177165;
   margin-bottom: 35px;
 }
+.about__link {
+  padding: 10px 70px 10px 50px;
+  background-color: white;
+  border: 2px solid #177165;
+  font-size: 16px;
+  line-height: 26px;
+  color: #177165;
+  position: relative;
+}
+.about__link::before {
+  content: "+";
+  position: absolute;
+  right: 45px;
+  top: 7px;
+  color: #177165;
+  height: 15px;
+  width: 15px;
+}
