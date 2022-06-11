@@ -36,6 +36,7 @@ body {
   font-size: 48px;
   line-height: 58px;
   color: #177165;
+  margin-bottom: 50px;
 }
 .nav {
   background-color: #177165;
@@ -184,7 +185,6 @@ body {
 .title--about {
   max-width: 995px;
   width: 100%;
-  margin-bottom: 50px;
 }
 .about__inner {
   display: flex;
@@ -194,6 +194,9 @@ body {
   height: 870px;
   width: 550px;
   object-fit: cover;
+}
+.about__img {
+  margin-right: 15px;
 }
 .about__text {
   max-width: 465px;
@@ -222,6 +225,9 @@ body {
   color: #177165;
   margin-bottom: 35px;
 }
+.about__item--botom {
+  margin-bottom: 95px;
+}
 .about__link {
   padding: 10px 70px 10px 50px;
   background-color: white;
@@ -230,6 +236,7 @@ body {
   line-height: 26px;
   color: #177165;
   position: relative;
+  padding: 10px 65px 10px 60px;
 }
 .about__link::before {
   content: "+";
@@ -239,4 +246,42 @@ body {
   color: #177165;
   height: 15px;
   width: 15px;
+}
+
+.services {
+  padding: 100px 0;
+  background-color: #e1f4f2;
+}
+.services__subtitle {
+  font-size: 17px;
+  line-height: 29px;
+  color: #777;
+  position: relative;
+  padding-left: 50px;
+}
+.services__subtitle::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  left: 0;
+  top: 12px;
+  background-color: #777;
+  margin-bottom: 10px;
+}
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+.services__item {
+  max-width: 270px;
+  width: 100%;
+}
+.services__title {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  color: #177165;
 }
