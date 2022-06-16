@@ -38,6 +38,24 @@ body {
   color: #177165;
   margin-bottom: 50px;
 }
+.description {
+  font-size: 17px;
+  line-height: 29px;
+  color: #a4d6cf;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 20px;
+  display: block;
+}
+.description::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  left: 0;
+  top: 14px;
+  background-color: #a4d6cf;
+}
 .nav {
   background-color: #177165;
   padding: 25px 10px;
@@ -111,7 +129,7 @@ body {
   max-width: 550px;
   width: 100%;
 }
-.hero__description {
+.description {
   font-size: 17px;
   line-height: 29px;
   color: #a4d6cf;
@@ -120,7 +138,7 @@ body {
   margin-bottom: 20px;
   display: block;
 }
-.hero__description::after {
+.description::after {
   content: "";
   position: absolute;
   width: 40px;
@@ -129,7 +147,7 @@ body {
   top: 14px;
   background-color: #a4d6cf;
 }
-.hero__description:nth-child(2) {
+.description:nth-child(2) {
   margin-bottom: 60px;
 }
 .hero__title {
@@ -273,6 +291,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
+  margin-bottom: 75px;
 }
 .services__item {
   max-width: 270px;
@@ -285,13 +304,8 @@ body {
   line-height: 36px;
   color: #177165;
 }
-.link__container {
-  padding-top: 35.5px;
-  display: flex;
-  justify-content: center;
-}
 .services__link {
-  padding: 10px 70px 10px 50px;
+  padding: 0px 10p;
   background-color: #e1f4f2;
   border: 2px solid #177165;
   font-size: 16px;
@@ -299,13 +313,40 @@ body {
   color: #177165;
   position: relative;
   padding: 10px 65px 10px 60px;
+  display: block;
+  max-width: 225px;
+  width: 100%;
+  margin: 0 auto;
 }
 .services__link::before {
   content: "+";
   position: absolute;
   right: 45px;
-  top: 7px;
+  top: 10px;
   color: #177165;
   height: 15px;
   width: 15px;
+}
+.action {
+  background-color: #177165;
+  padding: 80px 0;
+}
+.action--title {
+  color: #fff;
+}
+.action__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.action__services {
+  max-width: 465px;
+  width: 100%;
+  background-color: #23786d;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.nav__phone-title {
+  color: #a4d6cf;
 }
