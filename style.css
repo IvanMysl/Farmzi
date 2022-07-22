@@ -516,7 +516,7 @@ body {
   .team__image {
     max-width: 445px;
     width: 100%;
-    maxh: 530px;
+    max-width: 530px;
     height: 100%;
   }
 }
@@ -854,6 +854,27 @@ body {
   line-height: 26px;
   color: #ffffff;
 }
+@media (max-width: 992px) {
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__preview {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 540px) {
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__text {
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
+/* copy */
 .copy {
   padding: 20px 0;
   background-color: #0a312c;
